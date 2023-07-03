@@ -3,7 +3,8 @@
   "name": "ChatExt",
   "version": "1.0",
   "permissions": [
-    "tabs"
+    "tabs",
+    "storage"
   ],
   "action": {
     "default_popup": "popup.html"
@@ -15,6 +16,6 @@
   },
   "content_scripts": [{
     "matches": ["https://chat.openai.com/*"],
-    "js": ["content.js"]
+    "js": ["content-chatgpt.js"]
   }]
 }
